@@ -595,7 +595,7 @@
             if (process.throwDeprecation) {
               throw new Error(msg);
             } else if (process.traceDeprecation) {
-              console.trace(msg);
+              ;
             } else {
               console.error(msg);
             }
@@ -820,7 +820,7 @@
           });
         }
 
-        ctx.seen.pop();
+        ctx.seen.pop(); 
 
         return reduceToSingleString(output, base, braces);
       }
